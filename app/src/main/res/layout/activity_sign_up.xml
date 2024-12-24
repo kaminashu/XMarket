@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="Login"
+        android:textColor="#8BC34A"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginID"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/loginID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_edit"
+        android:inputType="text"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/imgOne" />
+
+    <EditText
+        android:id="@+id/takroriyPArol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_edit"
+        android:inputType="number"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/parolRetryIdTxt"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/parolID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_edit"
+        android:inputType="number"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/parolTxt" />
+
+    <TextView
+        android:id="@+id/parolRetryIdTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="Retry parol"
+        android:textColor="#8BC34A"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/parolID" />
+
+
+    <ImageView
+        android:id="@+id/imgOne"
+        android:layout_width="146dp"
+        android:layout_height="154dp"
+        android:src="@drawable/ellipse_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="146dp"
+        android:layout_height="154dp"
+        android:src="@drawable/ellipse_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/parolTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Parol"
+        android:textColor="#8BC34A"
+        android:textSize="17dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginID" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/kirishBtnTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_btn"
+        android:padding="15dp"
+        android:text="kirish"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/takroriyPArol" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
