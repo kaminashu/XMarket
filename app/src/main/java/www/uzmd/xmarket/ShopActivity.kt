@@ -17,7 +17,6 @@ class ShopActivity : AppCompatActivity() {
     lateinit var binding: ActivityShopBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         binding = ActivityShopBinding.inflate(layoutInflater)
         setContentView(binding.root)
         var name = intent.getStringExtra("name")
@@ -31,7 +30,7 @@ class ShopActivity : AppCompatActivity() {
             Picasso.get().load(url).into(binding.phoneImg)
         }
 
-
+/*
         binding.phoneCall.setOnClickListener {
 
             if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
@@ -45,6 +44,6 @@ class ShopActivity : AppCompatActivity() {
             }
 
 
-        }
+        }*/
     }
 }
